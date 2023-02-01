@@ -52,8 +52,9 @@ $("#button").click(function () {
         output = "E. You oughta get it together man"
     }
 
+    alert('You got a ' + output + ". That's a " + num_grade + "%!");
 
-    $("#score").html('You got a ' + output + ". That's a " + num_grade + "%!")
+   /* $("#score").html('You got a ' + output + ". That's a " + num_grade + "%!")*/
 
 });
 

@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Mission4ModelValidation.Models.GradeModel
+@{
+    ViewData["Title"] = "Grade Calculator";
+    ViewData["Header"] = "Grade Calculator";
+}
+
+<script src="~/lib/bootstrap/js/bootstrap.js"></script>
+<div>
+    <form method="post">
+        <br />
+        <label>Assignments:</label>
+        <input asp-for="Assignments" id="assignments" placeholder="e.g. 95%..." />
+        <span asp-validation-for="Assignments" class="text-danger"></span>
+        <br />
+        <br />
+        <label>Quizzes:</label>
+        <input asp-for="Quizzes" id="quizzes" />
+        <span asp-validation-for="Quizzes" class="text-danger"></span>
+        <br />
+        <br />
+        <label>Group Projects:</label>
+        <input asp-for="Group_projects" id="group_projects" />
+        <span asp-validation-for="Group_projects" class="text-danger"></span>
+        <br />
+        <br />
+        <label>Intex:</label>
+        <input asp-for="Intex" id="intex" />
+        <span asp-validation-for="Intex" class="text-danger"></span>
+        <br />
+        <br />
+        <label>Midterm Exam:</label>
+        <input asp-for="Midterm" id="midterm_exam" />
+        <span asp-validation-for="Midterm" class="text-danger"></span>
+        <br />
+        <br />
+        <label>Final Exam:</label>
+        <input asp-for="Final_exam" id="final_exam" />
+        <span asp-validation-for="Final_exam" class="text-danger"></span>
+        <br />
+        <br />
+        <button id="button" type="submit">Calculate</button>
+        <br />
+        <br />
+
+
+
+        @*<p id="score"></p>*@
+
+
+    </form>
+</div>
+
