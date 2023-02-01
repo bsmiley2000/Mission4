@@ -21,7 +21,7 @@ namespace Mission4.Controllers
             return View();
         }
 
-        
+        // This directs to the Gradcalculator page
         [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult GradeCalculator(GradeModel cls)

@@ -9,6 +9,8 @@ namespace Mission4ModelValidation.Models
     public class GradeModel
     {
 
+
+        // Each of these below is user validation so that enter a number 0..100 if they do not 
         [Key]
         public int Id { get; set; }
 
